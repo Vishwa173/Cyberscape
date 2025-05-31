@@ -174,4 +174,5 @@ Endless Map: Implement an infinite map with no boundaries.
 ~~Teleportation Points:~~
 
 ~~Teleportation Points allow players to strategically purchase and place teleport hubs anywhere on the map.~~
-Each hub can be given a custom label for easy recognition and organization. Players can instantly travel between these hubs.
+
+~~Each hub can be given a custom label for easy recognition and organization. Players can instantly travel between these hubs.~~
