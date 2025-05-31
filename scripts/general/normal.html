@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyberscape - Normal Mode</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="teleportPopup">
+    <div id="teleportPopupBox">
+      <label for="teleportInput">Enter Destination Portal ID:</label>
+      <input type="text" id="teleportInput" autocomplete="off" />
+    </div>
+  </div>
+
+  <div id="endgamePopup">
+    <h2 id="endgameMessage">Game Over</h2>
+    <p id="scoreDisplay"></p>
+    <p id="highScoreNote"></p>
+    <button onclick="restartGame()">Restart</button>
+  </div>
+
+  <img id="bullet-sprite" src="../../sprites/turret/bullet.png" hidden />
+
+  <script type="module" src="normal.js"></script>
+</body>
+</html>

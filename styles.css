@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./sprites/bg1.jpg');
+  background-size: cover;
+      
+  background-repeat: no-repeat; 
+  font-family: 'Orbitron', sans-serif;
+  color: #0ff;
+  overflow: hidden;
+}
+
+/* Instruction button */
+#instructionBtn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+
+#instructionBtn img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+#instructionBtn:hover img {
+  transform: scale(1.1);
+}
+
+/* Center Play Button */
+.center-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#normalModeBtn {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  background: #0ff;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #0ff;
+  transition: all 0.3s ease;
+}
+#normalModeBtn:hover {
+  background: #00f6ff;
+  box-shadow: 0 0 30px #0ff, 0 0 60px #0ff;
+}
+
+/* Instruction Popup */
+#instructionPopup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(10, 10, 30, 0.95);
+  border: 2px solid #0ff;
+  border-radius: 16px;
+  padding: 30px;
+  color: #0ff;
+  z-index: 1000;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 20px #0ff;
+}
+
+#instructionPopup .popup-content h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+#closePopup {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #0ff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff;
+}
+#closePopup:hover {
+  background: #00e6e6;
+}
