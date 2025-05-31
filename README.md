@@ -113,62 +113,65 @@ Hacker Mode
 
 ~~Invisibility Shields to hide from enemies.~~
 
-Bot Enemies:
+~~Bot Enemies:~~
 
 ~~Bot Enemies patrol the roads across the map and actively monitor for player presence.~~
 
-Each bot has a circular detection range; when a player enters this area, the bot locks on, chases the player, and opens fire if within shooting distance.
+~~Each bot has a circular detection range; when a player enters this area, the bot locks on, chases the player, and opens fire if within shooting distance.~~
 
-If the player manages to escape the detection radius, the bot will stop chasing and return to its original patrol route. This behavior adds tension and strategic depth to navigating the map.
+~~If the player manages to escape the detection radius, the bot will stop chasing and return to its original patrol route. This behavior adds tension and strategic depth to navigating the map.~~
 
-Bot Types: Add different types of bots, each with distinct behaviors and combat roles. The mandatory ones are given below:
+~~Bot Types: Add different types of bots, each with distinct behaviors and combat roles. The mandatory ones are given below:~~
 
-Light Bots: are quick and agile but have low health, making them easy to eliminate if caught.
+~~Light Bots: are quick and agile but have low health, making them easy to eliminate if caught.~~
 
-Heavy Bots: move slowly but are tough to defeat due to their high health.
+~~Heavy Bots: move slowly but are tough to defeat due to their high health.~~
 
-Snipers: specialize in long-range attacks (i.e, larger vision area), posing a significant threat from a distance.
+~~Snipers: specialize in long-range attacks (i.e, larger vision area), posing a significant threat from a distance.~~
 
-Marketplace System:
+~~Marketplace System:~~
 
-Create a Marketplace System where players can spend unused Data Shards to purchase various items.
+~~Create a Marketplace System where players can spend unused Data Shards to purchase various items.~~
 
-These include weapons such as various rifles and guns, upgrades like increased movement speed or fire rate, and essential utilities like health packs and shields to enhance survivability and combat effectiveness.
+~~These include weapons such as various rifles and guns, upgrades like increased movement speed or fire rate, and essential utilities like health packs and shields to enhance survivability and combat effectiveness.~~
 
-Animated Sprites:
+~~Animated Sprites:~~
 
-Use animated sprite sheets to visually represent characters and towers.
+~~Use animated sprite sheets to visually represent characters and towers.~~
 
-Bot Factory:
+~~Bot Factory:~~
 
-Implement a Bot Factory that periodically spawns enemy bots on the map. The spawn rate should increase gradually over time, adding pressure and escalating difficulty as the game progresses.
+~~Implement a Bot Factory that periodically spawns enemy bots on the map. The spawn rate should increase gradually over time, adding pressure and escalating difficulty as the game progresses.~~
 
-Safe Zones:
+~~Safe Zones:~~
 
-Design Safe Zones on the map where players are completely immune to damage.
+~~Design Safe Zones on the map where players are completely immune to damage.~~
 
-When a player enters a Safe Zone, all hostile bots and surveillance towers immediately disengage and stop attacking, allowing the player a moment to recover, strategize, or manage inventory without threat.
+~~When a player enters a Safe Zone, all hostile bots and surveillance towers immediately disengage and stop attacking, allowing the player a moment to recover, strategize, or manage inventory without threat.~~
 
 Hacker++ Mode
 
 Endless Map: Implement an infinite map with no boundaries.
 
-City-Wide Alerts:
+~~City-Wide Alerts:~~
 
-Implement a City-Wide Alert system where picking up a Key instantly alerts all bots on the map.
+~~Implement a City-Wide Alert system where picking up a Key instantly alerts all bots on the map.~~
 
-Upon activation, every bot begins to chase the player regardless of their location, dramatically increasing the challenge and urgency of escaping or reaching a safe zone.
+~~Upon activation, every bot begins to chase the player regardless of their location, dramatically increasing the challenge and urgency of escaping or reaching a safe zone.~~
 
-Data Mines:
+~~Data Mines:~~
 
-Add Data Mines as purchasable items in the marketplace.
+~~Add Data Mines as purchasable items in the marketplace.~~
 
-Players can buy and place them strategically on the map to automatically generate Data Shards over time.
+~~Players can buy and place them strategically on the map to automatically generate Data Shards over time.~~
 
-Data Mines require a build-up period after placement before they start producing Data Shards.
-Each mine has a fixed production rate and a maximum capacity, requiring players to return periodically to collect the generated shards.
-These data shards are already decrypted, i.e., they do not require keys to be decrypted.
-Teleportation Points:
+~~Data Mines require a build-up period after placement before they start producing Data Shards.~~
 
-Teleportation Points allow players to strategically purchase and place teleport hubs anywhere on the map.
+~~Each mine has a fixed production rate and a maximum capacity, requiring players to return periodically to collect the generated shards.~~
+
+~~These data shards are already decrypted, i.e., they do not require keys to be decrypted.~~
+
+~~Teleportation Points:~~
+
+~~Teleportation Points allow players to strategically purchase and place teleport hubs anywhere on the map.~~
 Each hub can be given a custom label for easy recognition and organization. Players can instantly travel between these hubs.
