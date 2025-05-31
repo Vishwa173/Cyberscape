@@ -1456,7 +1456,7 @@ function gameLoop() {
 
   for (let i = bullets.length - 1; i >= 0; i--) {
     const bullet = bullets[i];
-    if (!isPaused) bullet.update(player);
+    if (!isPaused) bullet.update(player, buildingRects);
     bullet.draw(ctx, camera);
 
     if (
@@ -1483,7 +1483,7 @@ function gameLoop() {
 
   for (let i = botBullets.length - 1; i >= 0; i--) {
     const bullet = botBullets[i];
-    if (!isPaused) bullet.update(player);
+    if (!isPaused) bullet.update(player, buildingRects);
     bullet.draw(ctx, camera);
 
     if (

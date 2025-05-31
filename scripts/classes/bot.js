@@ -197,7 +197,7 @@ export class bot{
       const spawnX = this.x + (dx / distance) * bulletOffset;
       const spawnY = this.y + (dy / distance) * bulletOffset;
 
-      const bullet = new Bullet(spawnX, spawnY, player.x, player.y, bulletSpeed, this.damage || 1);
+      const bullet = new Bullet(spawnX, spawnY, player.x, player.y, bulletSpeed, this.damage || 1, false);
 
       botBullets.push(bullet);
       this.lastShotTime = now;

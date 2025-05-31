@@ -5,31 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cyberscape Home</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Instructions Button -->
-  <button id="instructionBtn">
-    <img src="sprites/instructions2.png" alt="Instructions" />
-  </button>
+  <div id="background"></div>
 
-  <!-- Popup Instructions -->
-  <div id="instructionPopup">
-    <div class="popup-content">
-      <h2>Instructions</h2>
-      <p>
-        - Move with WASD<br />
-        - Left click to shoot<br />
-        - Deliver data shards at hubs<br />
-        - Avoid or defeat bots and turrets<br />
-        - Use market and powerups wisely<br />
-      </p>
-      <button id="closePopup">Close</button>
+  <div id="mainContent">
+    <button id="instructionBtn">
+      <img src="sprites/instructions2.png" alt="Instructions" />
+    </button>
+
+    <div class="glossy-panel">
+      <h1 class="game-title">CYBERSCAPE</h1>
+      <button id="normalModeBtn">Enter Normal Mode</button>
     </div>
   </div>
 
-  <!-- Main Button -->
-  <div class="center-button">
-    <button id="normalModeBtn">Enter Normal Mode</button>
+  <div id="instructionPopup">
+    <div class="popup-content">
+      <h2>Instructions</h2>
+    <p>
+    - Move with WASD or Arrow Keys<br />
+    - Left Click to shoot<br />
+    - Press Shift to switch weapons<br />
+    - Press T to place a Teleportation Hub (assign and enter ID to use)<br />
+    - Press F to place a Data Mine (stores up to 10 shards)<br />
+    - Press R to use Invisibility Shield (if purchased)<br />
+    - Collect Keys to decrypt Data Shards at the Orange Central Hub<br />
+    - Spend Shards in the Market for weapons, upgrades, and powerups<br />
+    - Deliver decrypted shards to the Cyan Base Station to help AUREX recover<br />
+    - Orange = Light Bots (fast, low HP)<br />
+    - Red = Heavy Bots (slow, high HP)<br />
+    - Purple = Sniper Bots (long range)<br />
+    - Picking up a key would mean every bot on the map would lock in on you<br />
+    - Teal = Safe Zone (bots disengage)<br />
+    - Purple Tile = Bot Factory (spawns bots)<br />
+    - Avoid or destroy bots and turrets<br />
+    - Stay safe and outsmart enemy systems!
+    </p>
+      <button id="closePopup">Close</button>
+    </div>
   </div>
 
   <script src="script.js"></script>

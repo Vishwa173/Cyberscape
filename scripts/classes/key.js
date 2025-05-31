@@ -27,7 +27,7 @@ export class Key {
   draw(ctx, cameraX, cameraY) {
     if (this.collected) return;
 
-    //console.log("Drawing key at", this.x, this.y);
+    //console.log(this.x, this.y);
 
     ctx.drawImage(
       this.spriteSheet,

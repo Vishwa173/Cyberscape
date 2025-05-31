@@ -1,11 +1,17 @@
-document.getElementById("normalModeBtn").addEventListener("click", () => {
-  window.location.href = "scripts/general/normal.html";
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const instructionBtn = document.getElementById("instructionBtn");
+  const instructionPopup = document.getElementById("instructionPopup");
+  const closePopup = document.getElementById("closePopup");
 
-document.getElementById("instructionBtn").addEventListener("click", () => {
-  document.getElementById("instructionPopup").style.display = "block";
-});
+  instructionBtn.onclick = () => {
+    instructionPopup.style.display = "flex";
+  };
 
-document.getElementById("closePopup").addEventListener("click", () => {
-  document.getElementById("instructionPopup").style.display = "none";
+  closePopup.addEventListener("click", () => {
+    instructionPopup.style.display = "none";
+  });
+
+  document.getElementById("normalModeBtn").addEventListener("click", () => {
+    window.location.href = "scripts/general/normal.html";
+  });
 });

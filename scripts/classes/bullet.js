@@ -1,5 +1,5 @@
 export class Bullet {
-    constructor(x, y, targetX, targetY, speed = 15, damage = 10) {
+    constructor(x, y, targetX, targetY, speed = 15, damage = 10, passThroughWalls = false) {
         this.x = x;
         this.y = y;
 
@@ -17,12 +17,28 @@ export class Bullet {
         this.frame = 0;
         this.spriteSheet = document.querySelector("#bullet-sprite");
         this.damage = damage;
+
+        this.passThroughWalls = passThroughWalls;
     }
 
-    update(player) {
+    update(player, buildingRects) {
         if (!this.hit) {
             this.x += this.dx;
             this.y += this.dy;
+
+            if (!this.passThroughWalls) {
+                for (const rect of buildingRects) {
+                    if (
+                        this.x < rect.x + rect.w &&
+                        this.x + this.width > rect.x &&
+                        this.y < rect.y + rect.h &&
+                        this.y + this.height > rect.y
+                    ) {
+                        this.hit = true;
+                        return;
+                    }
+                }
+            }
 
             if (this.checkCollision(player)) {
                 this.hit = true;

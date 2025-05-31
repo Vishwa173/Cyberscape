@@ -62,7 +62,7 @@ export class Tower {
             if (this.cooldownTimer >= this.cooldown || this.cooldownTimer === 0) {
                 const dirX = this.dx / this.dist;
                 const dirY = this.dy / this.dist;
-                this.bullets.push(new Bullet(this.x, this.y, this.player.x + this.player.size / 2, this.player.y + this.player.size / 2));
+                this.bullets.push(new Bullet(this.x, this.y, this.player.x + this.player.size / 2, this.player.y + this.player.size / 2, 15, 10, true));
                 this.cooldownTimer = 0;
             }
         } else {
